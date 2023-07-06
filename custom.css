@@ -1,0 +1,32 @@
+body,
+        html {
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #searchContainer.hidden {
+            display: none;
+        }
+
+        #resultContainer video {
+            width: 100%;
+        }
+
+        #resultContainer .download-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .spinner {
+            border-top-color: #004de6;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }

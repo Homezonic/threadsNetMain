@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="custom.css" rel="stylesheet">
+    <title>Thread.net Video Downloader</title>
+</head>
+
+<body>
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto flex items-center justify-between py-4">
+            <div>
+                <a href="/" class="text-2xl font-bold">Thread Downloader</a>
+            </div>
+            <div>
+                <ul class="flex space-x-4">
+                    <li><a href="/how-to" class="text-gray-300 hover:text-white">How to save?</a></li>
+                    <li><a href="/contact" class="text-gray-300 hover:text-white">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container mx-auto py-8 max-w-lg w-full">
+        <section class="bg-white-50">
+            <div class="mx-auto max-w-xl text-center">
+                <h1 class="text-3xl font-extrabold sm:text-5xl">Download <strong
+                        class="font-extrabold text-red-700 sm:block">Threads.net Video</strong></h1>
+                <p class="mt-4 sm:text-xl/relaxed pb-4">Enter the Thread Url Below and the tool will do its thing </p>
+            </div>
+        </section>
+        <div id="searchContainer">
+            <div class="flex">
+                <input type="text" id="urlInput"
+                    class="w-full rounded-l-lg p-4 border border-gray-300 px-4 py-2 rounded-md"
+                    placeholder="Enter Thread URL">
+                <button id="searchBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-r-lg p-4">
+                    Search
+                </button>
+            </div>
+        </div>
+        <div id="resultContainer" class="hidden">
+            <div id="spinner" class="flex justify-center mt-8">
+                <img src="spinner.svg" class="h-12 w-12 animate-spin" alt="Spinner">
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
