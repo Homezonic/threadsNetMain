@@ -8,7 +8,7 @@ document.getElementById('searchBtn').addEventListener('click', function () {
     document.getElementById('spinner').classList.remove('hidden');
 
     // Make an HTTP POST request to the backend
-    fetch('https://dlthreadsnet.onrender.com:3000/search', {
+    fetch('https://dlthreadsnet.onrender.com/search', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
